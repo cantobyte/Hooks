@@ -1,7 +1,9 @@
 #! /usr/bin/env python3 
-"""Find all of the files with staged hunks in the git
-repository. Run clang-format only on the staged hunks 
-from those files.
+"""Find all of the files with staged hunks in the git repository. Run
+clang-format only on the staged hunks from those files.
+
+Requires a .clang-format file somewhere up the path from where the
+script is executed.
 
 """
 import subprocess
