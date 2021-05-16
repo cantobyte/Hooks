@@ -85,7 +85,7 @@ def format_hunks(filename, line_infos):
     True if formatting violations existed, False otherwise
 
     """
-    format_cmd = f'clang-format -i {filename}'
+    format_cmd = f'clang-format -i {filename} --style=file'
     for start_line, num_lines in line_infos:
         format_cmd += f' --lines={start_line}:{start_line + num_lines}'
     # print(format_cmd)
